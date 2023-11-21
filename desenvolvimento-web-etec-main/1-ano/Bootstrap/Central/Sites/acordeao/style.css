@@ -1,0 +1,44 @@
+body {
+    background-color: rgba(131, 180, 255, 0.187);
+}
+
+.accordion{
+    background: transparent;
+}
+
+.accordion-item{
+    background: #dfabff;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1),-2px -2px 8px rgba(0,0,0,0.1);
+}
+
+.accordion-body{
+    background: #ffffff;
+    font-size: 0.7rem;
+}
+
+.accordion-button{
+    font-size: 0.8rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.accordion-button:not(.collapsed){
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+}
+.accordion-button::after{
+    background-image: none;
+}

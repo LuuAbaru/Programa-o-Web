@@ -1,0 +1,8 @@
+body {
+    padding: 100px 20vw 20px 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}

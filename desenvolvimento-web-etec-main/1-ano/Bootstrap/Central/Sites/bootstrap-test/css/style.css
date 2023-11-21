@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.claro {
+    margin: 5px; 
+    background-color: rgba(124, 124, 124, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.escuro {
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+#banner {
+    background-color: rgba(0, 0, 0, 0.726);
+    width: calc(100% - 9px);
+    padding: 10px;
+}
+picture {
+    margin: 0;
+    padding: 0;
+}
+#carros__banner * {
+    max-width: 33%;
+}

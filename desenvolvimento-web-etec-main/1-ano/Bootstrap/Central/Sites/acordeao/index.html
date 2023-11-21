@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+
+    <!-- bootstrap css 5.3.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body style="padding-top: 100px;">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute; width: 100vw; top: 0; left: 0; z-index: 99; box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 40px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-weight: 600;">1DS - M&P SITES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../../info.html">Informações</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Conteúdo
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../bootstrap-test/index.html">Colunas</a></li>
+                    <li><a class="dropdown-item" href="../alert/index.html">Alertas</a></li>
+                    <li><a class="dropdown-item" href="../Cards/Cards.html">Cartões</a></li>
+                    <li><a class="dropdown-item" href="../bootstrap-demo/index.html">Tabelas</a></li>
+                    <li><a class="dropdown-item" href="../Buttons/index.html">Botões</a></li>
+                    <li><a class="dropdown-item" href="../badge.html">Distintivos</a></li>
+                    <li><a class="dropdown-item" href="../carousel/index.html">Carrossel </a></li>
+                    <li><a class="dropdown-item" href="../boletim.html">Boletim</a></li>
+                    <li><a class="dropdown-item" href="../acordeao/index.html">Acordeão</a></li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+
+        <div>
+        </div>
+        </div>
+        </div>
+    </nav>
+  </header>
+    <div class="container">
+        <h1 class="display-1">Accordion Project</h1>
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Quem somos
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nós somos uma empresa líder em soluções de informática e tecnologia, dedicada a fornecer inovação e excelência aos nossos clientes. Nossa visão é impulsionar o progresso tecnológico, enquanto nossa missão é criar soluções que transformem desafios em oportunidades.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    História e Fundação
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Fundada em [ano de fundação], por [nomes dos fundadores], nossa jornada começou com a paixão compartilhada por explorar o potencial ilimitado da tecnologia. Desde então, evoluímos de forma constante, superando obstáculos e abraçando novas possibilidades.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Especializações e Serviços Oferecidos
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nossas especializações abrangem desde desenvolvimento de software personalizado até consultoria abrangente em TI. Oferecemos serviços de ponta, incluindo desenvolvimento de aplicativos, segurança cibernética avançada, soluções em nuvem e muito mais.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Inovação e Tecnologia
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nosso compromisso com a inovação é a espinha dorsal de nossa empresa. Estamos na vanguarda da adoção de tecnologias emergentes, como inteligência artificial, blockchain e Internet das Coisas (IoT), garantindo que nossos clientes tenham acesso ao que há de mais recente.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Clientes e Parcerias
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Atendemos uma ampla gama de clientes, desde startups promissoras até grandes corporações multinacionais. Além disso, cultivamos parcerias estratégicas com líderes do setor, permitindo-nos fornecer soluções integradas e de alto valor agregado.
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Projetos de Destaque
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nosso portfólio inclui projetos notáveis que demonstram nossa capacidade de resolver desafios complexos. Desde a criação de plataformas de e-commerce de alto desempenho até sistemas de gerenciamento de dados em larga escala, nossos projetos ilustram nossa experiência diversificada.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Equipe e Cultura Empresarial
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nossa equipe é composta por profissionais talentosos e dedicados, apaixonados por tecnologia e inovação. Promovemos uma cultura inclusiva e colaborativa, incentivando a criatividade e a aprendizagem contínua.
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Responsabilidade Social e Ambiental
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Além de nossos objetivos comerciais, também nos preocupamos com a responsabilidade social e ambiental. Participamos ativamente de programas comunitários e adotamos práticas sustentáveis para minimizar nosso impacto no meio ambiente.
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Desafios do Setor e Soluções Propostas
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Reconhecemos os desafios em constante evolução no setor de tecnologia e informática. Estamos comprometidos em superar esses desafios por meio de abordagens inovadoras, como a integração de IA para automação de processos e a implementação de estratégias robustas de segurança cibernética.
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        <div class="accordion ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Visão Futura e Expansão
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    À medida que avançamos, nossa visão é expandir nossas operações globalmente, oferecendo soluções ainda mais abrangentes e impactantes. Continuaremos a investir em pesquisa e desenvolvimento para permanecer na vanguarda das tendências tecnológicas e atender às necessidades futuras dos nossos clientes.
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+
+    <!-- bootstrap js 5.3.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

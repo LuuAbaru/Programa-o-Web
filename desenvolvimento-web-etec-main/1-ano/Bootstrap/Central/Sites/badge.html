@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>badge</title>
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      padding: 10px 10% 20px 10%;
+    }
+
+    #bar {
+      background-color: rgba(0, 0, 0, 0.205);
+      width: 100%;
+      height: 60px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      padding: 10px 10px 10px 30px;
+    }
+
+    .btt {
+      padding: 5px;
+      border-radius: 7px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.212);
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin-top: 7.5px;
+    }
+
+    .btt span {
+      margin-left: 5px;
+    }
+
+  </style>
+
+  <!-- bootstrap css 5.3.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+<body style="padding-top: 100px;">
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute; width: 100vw; top: 0; left: 0; z-index: 99; box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 40px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-weight: 600;">1DS - M&P SITES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../../info.html">Informações</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Conteúdo
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="bootstrap-test/index.html">Colunas</a></li>
+                    <li><a class="dropdown-item" href="alert/index.html">Alertas</a></li>
+                    <li><a class="dropdown-item" href="Cards/Cards.html">Cartões</a></li>
+                    <li><a class="dropdown-item" href="bootstrap-demo/index.html">Tabelas</a></li>
+                    <li><a class="dropdown-item" href="Buttons/index.html">Botões</a></li>
+                    <li><a class="dropdown-item" href="badge.html">Distintivos</a></li>
+                    <li><a class="dropdown-item" href="carousel/index.html">Carrossel </a></li>
+                    <li><a class="dropdown-item" href="boletim.html">Boletim</a></li>
+                    <li><a class="dropdown-item" href="acordeao/index.html">Acordeão</a></li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+
+        <div>
+        </div>
+        </div>
+        </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h1 class="display" style="margin-top: 20px;">Badges em Barra de Navegação👍</h1>
+    <div id="bar">
+
+      <h2 class="display">Badges</h2>
+
+      <h6 class="btt">Testando <span class="badge text-bg-primary">olá</span></h6>
+      <h6 class="btt">Os <span class="badge text-bg-secondary">+999</span></h6>
+      <h6 class="btt">Badges <span class="badge text-bg-success">-1</span></h6>
+
+    </div>
+
+    <h1 class="display" style="margin-top: 20px;">Badges</h1>
+
+    <h6>Notificações <span class="badge bg-secondary">0</span></h6>
+    <h6>Emails <span class="badge bg-success">+2</span></h6>
+    <h6>Alertas <span class="badge bg-warning">56</span></h6>
+    <h6>Issues <span class="badge bg-danger">4</span></h6>
+
+    <section>
+      <button type="button" class="btn btn-danger">
+        HTML <span class="badge text-bg-warning">3</span>
+      </button>
+      <button type="button" class="btn btn-primary">
+        CSS <span class="badge text-bg-light">2</span>
+      </button>
+      <button type="button" class="btn btn-warning">
+        JS <span class="badge text-bg-danger">1</span>
+      </button>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+/* reset */
+* {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+}
+
+/* body */
+body {
+	height: calc(100vh - 328px);
+}
+
+:root {
+	--accent-color: rgb(228, 123, 74);
+	--dark-color: rgb(46, 46, 46);
+}
+
+/* classe para elementos cujo nao podem ser selecionados */
+.prevent-select, #head, #site__footer, #container__blocos {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* CABEÇA */
+/* estrutura laranja do topo */
+header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+#head {
+	display: flex;
+	justify-content: center;
+	height: 80px;
+	width: 100%;
+	background-color: var(--accent-color);
+}
+
+/* logo tudotaste */
+#logo {
+	text-shadow: 3px 3px  var(--dark-color);
+	position: absolute;
+	color: white;
+	margin-left: -44px;
+}
+
+/*pepper*/
+#pepper {
+	position: absolute;
+	height: 44px;
+	width: 44px;
+	z-index: 2;
+	margin-bottom: 5px;
+}
+
+#logo img {
+	width: 50px;
+}
+
+/* CORPO*/
+/* bloco de receita */
+.bloco__receita {
+	margin: 20px;
+	text-decoration: none;
+	color: var(--dark-color);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	width: calc(50% - 100px);
+	height: 300px;
+	background-color: rgb(248, 248, 248);
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.288);
+}
+
+.bloco__receita h1 {
+	font-size: 16pt;
+	margin-top: -5px;
+}
+
+.bloco__receita img {
+	width: 100%;
+	height: 200px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.bloco__receita p {
+	max-height: 50px;
+	font-size: 11pt;
+	margin-top: -20px;
+	overflow: hidden;
+	-webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+	mask-image: linear-gradient(180deg, #000 60%, transparent);
+	text-overflow: ellipsis;
+}
+
+/* container do blox de receita */
+#container__blocos {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+/* barra de navegação */
+#nav {
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+	position: absolute;
+	background-color: var(--dark-color);
+	height: 46px;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+}
+
+/* botões para navegar */
+.btt:hover {
+	color: var(--accent-color);
+	background-color: rgb(216, 224, 231);
+}
+
+.btt {
+	border-radius: 5px;
+	font-variant-caps: all-petite-caps;
+	font-style: oblique;
+	text-decoration: none;
+	width: 80px;
+	height: min-content;
+	padding:  2.5px 7.5px 7.5px 7.5px;
+	margin: 5px;
+	background-color: var(--accent-color);
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--dark-color);
+}
+
+/* corpo do site */
+#site__body {
+	margin-top: 75px;
+	padding: 55px 5px 55px 5px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background-color: rgb(240, 240, 240);
+	max-width: 1024px;
+	width: 90%;
+	min-height: calc(100vh - 307px);
+}
+
+/* classe das receitas */
+.receita {
+	margin: 50px;
+	display: flex;
+	justify-content: left;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+h1 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 700;
+	font-variant-caps: all-petite-caps;
+} 
+ul li {
+	margin-left: 25px;
+}
+h2 {
+	margin: 10px 0 10px 0;
+}
+p {
+	padding: 7.5px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.receita img {
+	margin: 10px;
+	width: calc(100% - 80px);
+	max-width: 720px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.589);
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+/* RODAPE */
+#site__footer {
+	bottom: 0;
+	padding: 20px 20% 20px 20%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	align-content: center;
+	align-self: center;
+	background-color: var(--accent-color);
+}
+
+#site__footer h1 {
+	text-align: center;
+	margin-top: 18px;
+	font-size: 24px;
+	color: white;
+	text-shadow: 2px 2px  var(--dark-color);
+}
+
+#site__footer ul li {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	font-size: 14px;
+	font-style: oblique;
+	font-weight: 700;
+	color: white;
+	text-shadow: 2px 2px  var(--dark-color);
+}
+
+#site__footer ul li .fa-brands {
+	font-size: 26px;
+	margin: 2.5px 5px 2.5px 2.5px;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: var(--dark-color);
+	color: white;
+}
+
+/* ajustes de responsividade */
+@media (max-width: 780px){
+	.bloco__receita {
+		width: 100%;
+	}
+	#site__footer {
+		padding: 20px;
+	}
+}
